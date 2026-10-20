@@ -1,0 +1,319 @@
+/* SGT Technologies - Footer Component Styles */
+.sgt-footer {
+  background-color: var(--midnight-black);
+  border-top: 1px solid var(--border-subtle);
+  padding: 5rem 1.5rem 2.5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.sgt-footer-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+}
+
+/* Pre-footer Callout Banner */
+.sgt-footer-cta-card {
+  background: linear-gradient(135deg, rgba(200, 169, 107, 0.08) 0%, rgba(26, 26, 26, 0.8) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-footer-cta-info {
+  max-width: 650px;
+}
+
+.sgt-footer-cta-heading {
+  font-family: var(--font-headings);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  margin: 0.75rem 0 0.5rem 0;
+  letter-spacing: -0.02em;
+}
+
+.sgt-footer-cta-sub {
+  color: var(--warm-ivory);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.sgt-footer-cta-actions {
+  flex-shrink: 0;
+}
+
+/* 4-Column Grid */
+.sgt-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.2fr 1.3fr;
+  gap: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+/* Brand Column */
+.sgt-footer-brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  cursor: pointer;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+}
+
+.sgt-footer-monogram {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: var(--dark-gray);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--transition-normal);
+}
+
+.sgt-footer-brand-logo:hover .sgt-footer-monogram {
+  transform: translateY(-2px);
+  border-color: var(--champagne-gold);
+}
+
+.sgt-footer-brand-name {
+  font-family: var(--font-headings);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  letter-spacing: -0.01em;
+}
+
+.sgt-footer-brand-name span {
+  color: var(--champagne-gold);
+  font-weight: 500;
+}
+
+.sgt-footer-tagline-text {
+  font-size: 0.88rem;
+  color: var(--champagne-gold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.sgt-footer-tagline-text strong {
+  font-weight: 600;
+  color: var(--pure-white);
+}
+
+.sgt-footer-desc {
+  font-size: 0.92rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.65;
+  margin-bottom: 1.75rem;
+}
+
+.sgt-footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.sgt-footer-social-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--dark-gray);
+  border: 1px solid var(--border-subtle);
+  color: var(--warm-ivory);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+  text-decoration: none;
+}
+
+.sgt-footer-social-btn:hover {
+  background: var(--surface-card);
+  border-color: var(--champagne-gold);
+  color: var(--champagne-gold);
+  transform: translateY(-2px);
+}
+
+/* Column Headings and Links */
+.sgt-footer-heading {
+  font-family: var(--font-headings);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  letter-spacing: -0.01em;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.sgt-footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: var(--champagne-gold);
+  border-radius: 2px;
+}
+
+.sgt-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sgt-footer-link-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--warm-ivory);
+  opacity: 0.75;
+  cursor: pointer;
+  text-align: left;
+  transition: all var(--transition-fast);
+}
+
+.sgt-footer-link-btn:hover {
+  opacity: 1;
+  color: var(--champagne-gold);
+  padding-left: 4px;
+}
+
+/* Contact List */
+.sgt-footer-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.sgt-footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.sgt-footer-contact-icon {
+  color: var(--champagne-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Newsletter Form */
+.sgt-footer-newsletter {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+}
+
+.sgt-footer-newsletter-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--pure-white);
+  margin-bottom: 0.75rem;
+}
+
+.sgt-footer-newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.sgt-footer-newsletter-input {
+  flex: 1;
+  background: var(--midnight-black);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--pure-white);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.sgt-footer-newsletter-input:focus {
+  border-color: var(--champagne-gold);
+}
+
+.sgt-footer-newsletter-btn {
+  background: var(--champagne-gold);
+  border: none;
+  border-radius: var(--radius-sm);
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--midnight-black);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.sgt-footer-newsletter-btn:hover {
+  background: var(--champagne-gold-light);
+}
+
+.sgt-footer-subscribed-msg {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  color: #10b981;
+}
+
+/* Footer Bottom Bar */
+.sgt-footer-bottom {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--warm-ivory);
+  opacity: 0.65;
+}
+
+@media (max-width: 1024px) {
+  .sgt-footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+  .sgt-footer-cta-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .sgt-footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .sgt-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

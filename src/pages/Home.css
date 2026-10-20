@@ -1,0 +1,747 @@
+/* SGT Technologies - Home Page Styles */
+.sgt-home {
+  position: relative;
+  background-color: var(--midnight-black);
+  color: var(--warm-ivory);
+  overflow-x: hidden;
+}
+
+/* 1. Hero Section */
+.sgt-hero-section {
+  position: relative;
+  padding: 8rem 1.5rem 5rem 1.5rem;
+  background: radial-gradient(circle at 50% 15%, rgba(200, 169, 107, 0.08) 0%, rgba(17, 17, 17, 1) 75%);
+  text-align: center;
+}
+
+.sgt-hero-glow-top {
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(200, 169, 107, 0.12) 0%, rgba(17, 17, 17, 0) 70%);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+.sgt-hero-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+.sgt-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 1.1rem;
+  background: rgba(38, 38, 38, 0.6);
+  border: 1px solid var(--border-gold);
+  border-radius: 9999px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(8px);
+}
+
+.sgt-badge-gold-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--champagne-gold);
+  box-shadow: 0 0 10px var(--champagne-gold);
+}
+
+.sgt-badge-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+}
+
+.sgt-hero-headline {
+  font-family: var(--font-headings);
+  font-size: clamp(2rem, 5.5vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  margin: 0 auto 1.5rem auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sgt-hero-subtext {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--warm-ivory);
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 760px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+
+.sgt-hero-cta-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-bottom: 4.5rem;
+  flex-wrap: wrap;
+}
+
+/* System Architecture Visual Card */
+.sgt-hero-visual-card {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.sgt-hero-visual-header {
+  background: var(--dark-gray);
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sgt-hero-visual-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ef4444; opacity: 0.7; }
+.dot.yellow { background: #f59e0b; opacity: 0.7; }
+.dot.green { background: #10b981; opacity: 0.7; }
+
+.sgt-hero-visual-title {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--warm-ivory);
+  letter-spacing: 0.04em;
+  opacity: 0.8;
+}
+
+.sgt-hero-visual-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #10b981;
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+}
+
+.sgt-hero-visual-body {
+  padding: 2rem;
+  background: linear-gradient(180deg, rgba(26, 26, 26, 0.9) 0%, rgba(17, 17, 17, 0.95) 100%);
+}
+
+.sgt-tech-matrix-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.sgt-tech-matrix-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.1rem;
+  padding: 1.25rem;
+  background: rgba(38, 38, 38, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+}
+
+.sgt-tech-matrix-item:hover {
+  background: rgba(38, 38, 38, 0.8);
+  border-color: var(--border-gold);
+  transform: translateY(-2px);
+}
+
+.matrix-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  background: rgba(200, 169, 107, 0.1);
+  color: var(--champagne-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.matrix-layer {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--champagne-gold);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.matrix-content h4 {
+  font-family: var(--font-headings);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  margin: 0 0 0.35rem 0;
+}
+
+.matrix-content p {
+  font-size: 0.85rem;
+  color: var(--warm-ivory);
+  opacity: 0.75;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Common Section Layout */
+.sgt-section-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sgt-section-header {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.sgt-section-eyebrow {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--champagne-gold);
+  margin-bottom: 0.75rem;
+}
+
+.sgt-section-title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.75rem, 3.2vw, 2.65rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+
+.sgt-section-subtitle {
+  font-size: 1.05rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.65;
+  margin: 0 auto;
+  max-width: 760px;
+  text-align: center;
+}
+
+/* 2. Services Overview Section */
+.sgt-services-section {
+  padding: 6.5rem 0;
+  background-color: var(--midnight-black);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.sgt-service-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.sgt-service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--champagne-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-normal);
+}
+
+.sgt-service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-gold);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.sgt-service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.sgt-service-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: rgba(200, 169, 107, 0.1);
+  border: 1px solid rgba(200, 169, 107, 0.2);
+  color: var(--champagne-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sgt-service-card-arrow {
+  color: var(--warm-ivory);
+  opacity: 0.4;
+  transition: all var(--transition-fast);
+}
+
+.sgt-service-card:hover .sgt-service-card-arrow {
+  opacity: 1;
+  color: var(--champagne-gold);
+  transform: translate(2px, -2px);
+}
+
+.sgt-service-card-title {
+  font-family: var(--font-headings);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  line-height: 1.3;
+  margin: 0 0 0.85rem 0;
+}
+
+.sgt-service-card-desc {
+  font-size: 0.9rem;
+  color: var(--warm-ivory);
+  opacity: 0.75;
+  line-height: 1.55;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+}
+
+.sgt-service-card-footer {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1rem;
+}
+
+.sgt-service-link-text {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--champagne-gold);
+  letter-spacing: 0.02em;
+}
+
+.sgt-services-section-cta {
+  text-align: center;
+}
+
+/* 3. Why Choose SGT Technologies */
+.sgt-why-section {
+  padding: 6.5rem 0;
+  background: linear-gradient(180deg, var(--midnight-black) 0%, #151515 100%);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}
+
+.sgt-why-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.sgt-why-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.sgt-why-card-number {
+  font-family: var(--font-headings);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--champagne-gold);
+  opacity: 0.85;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.sgt-why-card-title {
+  font-family: var(--font-headings);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  line-height: 1.3;
+  margin: 0 0 0.85rem 0;
+}
+
+.sgt-why-card-desc {
+  font-size: 0.92rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 4. Featured Projects */
+.sgt-projects-section {
+  padding: 6.5rem 0;
+  background-color: var(--midnight-black);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-projects-section-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+.sgt-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.sgt-project-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.sgt-project-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-project-badge-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.sgt-project-category-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--champagne-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.sgt-project-illustrative-tag {
+  font-size: 0.7rem;
+  color: var(--warm-ivory);
+  opacity: 0.55;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+}
+
+.sgt-project-title {
+  font-family: var(--font-headings);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  line-height: 1.35;
+  margin: 0 0 1rem 0;
+}
+
+.sgt-project-overview {
+  font-size: 0.92rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+}
+
+.sgt-project-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.sgt-tech-pill {
+  font-size: 0.76rem;
+  font-weight: 500;
+  color: var(--warm-ivory);
+  background: var(--dark-gray);
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+}
+
+.sgt-tech-pill-more {
+  font-size: 0.76rem;
+  color: var(--champagne-gold);
+  padding: 0.25rem 0.4rem;
+}
+
+.sgt-project-card-action {
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1.25rem;
+}
+
+.sgt-project-view-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--champagne-gold);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: gap var(--transition-fast);
+}
+
+.sgt-project-view-btn:hover {
+  gap: 0.75rem;
+  color: var(--champagne-gold-light);
+}
+
+/* 5. Our Process */
+.sgt-process-section {
+  padding: 6.5rem 0;
+  background: linear-gradient(180deg, #151515 0%, var(--midnight-black) 100%);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-process-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+.sgt-process-step-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.sgt-process-step-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+}
+
+.sgt-process-step-number {
+  font-family: var(--font-headings);
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--champagne-gold);
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.sgt-process-step-title {
+  font-family: var(--font-headings);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  line-height: 1.35;
+  margin: 0 0 0.85rem 0;
+}
+
+.sgt-process-step-desc {
+  font-size: 0.85rem;
+  color: var(--warm-ivory);
+  opacity: 0.75;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.sgt-process-step-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, var(--champagne-gold), transparent);
+  opacity: 0.4;
+}
+
+/* 6. Call to Action (CTA) */
+.sgt-cta-section {
+  padding: 6.5rem 0 7.5rem 0;
+  background-color: var(--midnight-black);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-cta-box {
+  background: radial-gradient(circle at 50% 0%, rgba(200, 169, 107, 0.15) 0%, rgba(26, 26, 26, 0.95) 75%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 4.5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.sgt-cta-title {
+  font-family: var(--font-headings);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  margin: 1.25rem 0 1rem 0;
+}
+
+.sgt-cta-text {
+  font-size: 1.15rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  max-width: 650px;
+  margin: 0 auto 2.5rem auto;
+  line-height: 1.6;
+}
+
+.sgt-cta-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-large {
+  padding: 0.95rem 2.25rem;
+  font-size: 1.05rem;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+  .sgt-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sgt-process-steps-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .sgt-why-grid,
+  .sgt-projects-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgt-process-steps-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sgt-projects-section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sgt-tech-matrix-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .sgt-hero-headline {
+    white-space: normal;
+    font-size: clamp(1.85rem, 8vw, 2.6rem);
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  .sgt-hero-section {
+    padding: 6.5rem 1rem 3.5rem 1rem;
+  }
+  .sgt-hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .sgt-hero-cta-group button {
+    width: 100%;
+    justify-content: center;
+  }
+  .sgt-hero-visual-card {
+    border-radius: var(--radius-md);
+  }
+  .sgt-hero-visual-body {
+    padding: 1.25rem 1rem;
+  }
+  .sgt-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgt-process-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgt-cta-box {
+    padding: 2.5rem 1.25rem;
+  }
+  .btn-large {
+    width: 100%;
+    justify-content: center;
+  }
+}

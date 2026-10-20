@@ -1,0 +1,345 @@
+/* SGT Technologies - Services Page Styles */
+.sgt-services-page {
+  background-color: var(--midnight-black);
+  color: var(--warm-ivory);
+  min-height: 100vh;
+}
+
+/* Hero Banner */
+.sgt-services-hero {
+  padding: 8rem 1.5rem 4rem 1.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(200, 169, 107, 0.08) 0%, rgba(17, 17, 17, 1) 75%);
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sgt-services-hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sgt-services-headline {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3.2vw, 2.85rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 1.25rem auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sgt-services-subtext {
+  font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+}
+
+.sgt-services-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sgt-filter-btn {
+  background: var(--dark-gray);
+  border: 1px solid var(--border-subtle);
+  color: var(--warm-ivory);
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  font-weight: 500;
+  padding: 0.55rem 1.25rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.sgt-filter-btn:hover {
+  border-color: var(--champagne-gold);
+  color: var(--pure-white);
+}
+
+.sgt-filter-btn.active {
+  background: var(--champagne-gold);
+  border-color: var(--champagne-gold);
+  color: var(--midnight-black);
+  font-weight: 700;
+}
+
+/* Services Content Section */
+.sgt-services-content-section {
+  padding: 5rem 0;
+}
+
+.sgt-services-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.sgt-services-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* Service Detail Card */
+.sgt-service-detail-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.sgt-service-detail-card:hover {
+  border-color: var(--border-gold);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-service-detail-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.sgt-service-detail-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background: rgba(200, 169, 107, 0.1);
+  border: 1px solid rgba(200, 169, 107, 0.25);
+  color: var(--champagne-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sgt-service-detail-title-wrap {
+  flex: 1;
+}
+
+.sgt-service-index-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: var(--champagne-gold);
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+
+.sgt-service-detail-name {
+  font-family: var(--font-headings);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.85rem 0;
+}
+
+.sgt-service-detail-lead {
+  font-size: 1.05rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 3 Pillars Grid */
+.sgt-service-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.sgt-pillar-box {
+  background: rgba(38, 38, 38, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+}
+
+.sgt-pillar-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-headings);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.pillar-icon.problems {
+  color: #f59e0b;
+}
+
+.pillar-icon.benefits {
+  color: #10b981;
+}
+
+.pillar-icon.usecases {
+  color: var(--champagne-gold);
+}
+
+.sgt-pillar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.sgt-pillar-list li {
+  font-size: 0.88rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.sgt-pillar-list li::before {
+  content: '•';
+  color: var(--champagne-gold);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+}
+
+/* Service Detail Footer */
+.sgt-service-detail-footer {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sgt-service-tech-group {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.sgt-tech-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--warm-ivory);
+  opacity: 0.6;
+}
+
+.sgt-service-tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.sgt-tech-tag {
+  background: var(--dark-gray);
+  border: 1px solid var(--border-subtle);
+  padding: 0.3rem 0.7rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--warm-ivory);
+}
+
+/* Bottom CTA */
+.sgt-services-bottom-cta {
+  padding: 3rem 0 7rem 0;
+}
+
+.sgt-services-cta-inner {
+  background: radial-gradient(circle at 50% 0%, rgba(200, 169, 107, 0.12) 0%, rgba(26, 26, 26, 0.95) 75%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sgt-services-cta-heading {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  margin: 1rem 0 0.85rem 0;
+}
+
+.sgt-services-cta-text {
+  font-size: 1.05rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .sgt-service-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgt-service-detail-card {
+    padding: 2.25rem 1.75rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .sgt-services-headline {
+    white-space: normal;
+    font-size: clamp(1.4rem, 4.8vw, 2.2rem);
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  .sgt-services-hero {
+    padding: 6.5rem 1rem 3rem 1rem;
+  }
+  .sgt-services-subtext {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: 1.75rem;
+  }
+  .sgt-service-detail-header {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .sgt-service-detail-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+  }
+  .sgt-service-cta-wrap,
+  .sgt-service-cta-wrap button {
+    width: 100%;
+    justify-content: center;
+  }
+  .sgt-services-cta-inner {
+    padding: 2.5rem 1.25rem;
+  }
+}

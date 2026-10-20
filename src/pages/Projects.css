@@ -1,0 +1,415 @@
+/* SGT Technologies - Projects Page Styles */
+.sgt-projects-page {
+  background-color: var(--midnight-black);
+  color: var(--warm-ivory);
+  min-height: 100vh;
+}
+
+/* Hero */
+.sgt-projects-hero {
+  padding: 8rem 1.5rem 4rem 1.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(200, 169, 107, 0.08) 0%, rgba(17, 17, 17, 1) 75%);
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sgt-projects-hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sgt-projects-headline {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3.2vw, 2.85rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 1.25rem auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sgt-projects-subtext {
+  font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto 1.75rem auto;
+  text-align: center;
+}
+
+.sgt-projects-notice-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.4rem 1rem;
+  background: rgba(38, 38, 38, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--champagne-gold);
+}
+
+.notice-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--champagne-gold);
+}
+
+/* Filter Bar */
+.sgt-projects-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.sgt-project-filter-btn {
+  background: var(--dark-gray);
+  border: 1px solid var(--border-subtle);
+  color: var(--warm-ivory);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 500;
+  padding: 0.5rem 1.1rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.sgt-project-filter-btn:hover {
+  border-color: var(--champagne-gold);
+  color: var(--pure-white);
+}
+
+.sgt-project-filter-btn.active {
+  background: var(--champagne-gold);
+  border-color: var(--champagne-gold);
+  color: var(--midnight-black);
+  font-weight: 700;
+}
+
+/* Content Section */
+.sgt-projects-content-section {
+  padding: 4.5rem 0 6rem 0;
+}
+
+.sgt-projects-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Portfolio Cards Grid */
+.sgt-projects-grid-full {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem;
+}
+
+.sgt-project-portfolio-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all var(--transition-normal);
+}
+
+.sgt-project-portfolio-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+}
+
+/* Schematic Visual Header */
+.sgt-portfolio-card-visual {
+  height: 190px;
+  background: linear-gradient(135deg, #1f1f1f 0%, #151515 100%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-subtle);
+  overflow: hidden;
+}
+
+.sgt-portfolio-schematic-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.schematic-line {
+  position: absolute;
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(200, 169, 107, 0.3), transparent);
+}
+
+.schematic-center-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(17, 17, 17, 0.9);
+  border: 1px solid var(--border-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--champagne-gold);
+  z-index: 2;
+  box-shadow: 0 0 25px rgba(200, 169, 107, 0.15);
+}
+
+.sgt-portfolio-visual-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1.25rem;
+  z-index: 3;
+}
+
+.sgt-portfolio-visual-badge span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--champagne-gold);
+  background: rgba(17, 17, 17, 0.85);
+  border: 1px solid rgba(200, 169, 107, 0.25);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(4px);
+}
+
+.sgt-portfolio-sample-tag {
+  position: absolute;
+  top: 1rem;
+  right: 1.25rem;
+  font-size: 0.7rem;
+  color: var(--warm-ivory);
+  opacity: 0.55;
+  background: rgba(17, 17, 17, 0.7);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  z-index: 3;
+}
+
+/* Card Body */
+.sgt-portfolio-card-body {
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.sgt-portfolio-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.sgt-portfolio-num {
+  font-size: 0.75rem;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--champagne-gold);
+}
+
+.sgt-portfolio-type {
+  font-size: 0.72rem;
+  color: var(--warm-ivory);
+  opacity: 0.5;
+}
+
+.sgt-portfolio-title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.2rem, 2vw, 1.35rem);
+  font-weight: 700;
+  color: var(--pure-white);
+  line-height: 1.35;
+  margin: 0 0 1rem 0;
+}
+
+.sgt-portfolio-overview {
+  font-size: 0.92rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0 0 1.5rem 0;
+  flex: 1;
+}
+
+.sgt-portfolio-highlights {
+  background: rgba(26, 26, 26, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.84rem;
+  color: var(--warm-ivory);
+  line-height: 1.5;
+}
+
+.highlight-item strong {
+  color: var(--champagne-gold);
+  font-weight: 600;
+}
+
+.sgt-portfolio-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.sgt-tech-chip {
+  background: var(--dark-gray);
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.76rem;
+  color: var(--warm-ivory);
+  font-weight: 500;
+}
+
+.sgt-portfolio-action-row {
+  margin-top: auto;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-sgt-gold-sm {
+  background: var(--champagne-gold);
+  color: var(--midnight-black);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-sgt-gold-sm:hover {
+  background: var(--champagne-gold-light);
+  transform: translateY(-1px);
+}
+
+.btn-sgt-outline-sm {
+  background: transparent;
+  color: var(--warm-ivory);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.55rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-sgt-outline-sm:hover {
+  border-color: var(--champagne-gold);
+  color: var(--pure-white);
+}
+
+/* Bottom CTA */
+.sgt-projects-bottom-cta {
+  padding: 2rem 0 6rem 0;
+}
+
+.sgt-projects-cta-box {
+  background: radial-gradient(circle at 50% 0%, rgba(200, 169, 107, 0.12) 0%, rgba(26, 26, 26, 0.95) 75%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.sgt-projects-cta-title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3.2vw, 2.2rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  margin: 1rem 0 0.85rem 0;
+}
+
+.sgt-projects-cta-text {
+  font-size: 1.05rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .sgt-projects-grid-full {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 860px) {
+  .sgt-projects-headline {
+    white-space: normal;
+    font-size: clamp(1.4rem, 4.8vw, 2.2rem);
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  .sgt-projects-hero {
+    padding: 6.5rem 1rem 3rem 1rem;
+  }
+  .sgt-projects-subtext {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .sgt-portfolio-card-visual {
+    height: 160px;
+  }
+  .sgt-portfolio-card-body {
+    padding: 1.5rem 1.25rem;
+  }
+  .sgt-portfolio-action-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .btn-sgt-gold-sm,
+  .btn-sgt-outline-sm {
+    width: 100%;
+    justify-content: center;
+  }
+  .sgt-projects-cta-box {
+    padding: 2.5rem 1.25rem;
+  }
+}

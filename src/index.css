@@ -1,0 +1,267 @@
+/* ==========================================================================
+   SGT TECHNOLOGIES — LUXURY ENTERPRISE DESIGN SYSTEM
+   Brand Name: SGT Technologies | Brand: SGT
+   Tagline: Build Beyond Limits.
+   Color Palette:
+     - Midnight Black: #111111
+     - Champagne Gold: #C8A96B
+     - Warm Ivory: #F7F2E8
+     - Pure White: #FFFFFF
+     - Dark Gray: #262626 / #1A1A1A
+   ========================================================================== */
+
+:root {
+  /* Brand Core Palette */
+  --midnight-black: #111111;
+  --bg-primary: #111111;
+  --champagne-gold: #C8A96B;
+  --champagne-gold-light: #D7BC82;
+  --gold-primary: #C8A96B;
+  --gold-hover: #D7BC82;
+  --gold-dark: #9F834B;
+  --warm-ivory: #F7F2E8;
+  --pure-white: #FFFFFF;
+  --dark-gray: #262626;
+  --surface-card: #1A1A1A;
+  --bg-card: #1A1A1A;
+
+  /* Typography Colors */
+  --text-primary: #FFFFFF;
+  --text-ivory: #F7F2E8;
+  --text-secondary: #C8C5BD;
+  --text-muted: #8E8E93;
+  --text-dim: #636366;
+
+  /* Accents & Transparencies */
+  --gold-subtle: rgba(200, 169, 107, 0.12);
+  --gold-glow: rgba(200, 169, 107, 0.25);
+  --border-gold: rgba(200, 169, 107, 0.35);
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: #262626;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-error: #EF4444;
+
+  /* Gradients */
+  --gradient-gold: linear-gradient(135deg, #C8A96B 0%, #E2CA94 50%, #C8A96B 100%);
+  --gradient-card: linear-gradient(180deg, #1C1C1C 0%, #151515 100%);
+  --gradient-hero: radial-gradient(circle at 50% 20%, rgba(200, 169, 107, 0.08) 0%, rgba(17, 17, 17, 0.98) 75%);
+
+  /* Shadows */
+  --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(200, 169, 107, 0.08);
+  --shadow-gold: 0 8px 24px rgba(200, 169, 107, 0.2);
+
+  /* Container & Layout */
+  --container-max: 1280px;
+
+  /* Typography */
+  --font-headings: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-subheading: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 26px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Base Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--midnight-black);
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--midnight-black);
+  color: var(--warm-ivory);
+  line-height: 1.65;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+  font-weight: 700;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+p {
+  color: var(--warm-ivory);
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--champagne-gold);
+}
+
+/* Badges */
+.sgt-badge-luxury,
+.sgt-badge-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  font-family: var(--font-headings);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  background: rgba(200, 169, 107, 0.12);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-full);
+}
+
+.sgt-badge-dark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.35rem 0.95rem;
+  font-family: var(--font-headings);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--warm-ivory);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+}
+
+/* Text Gradients */
+.text-gold-gradient {
+  background: var(--gradient-gold);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Buttons */
+.btn-sgt-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: var(--champagne-gold);
+  color: #111111 !important;
+  font-family: var(--font-headings);
+  font-weight: 700;
+  font-size: 0.92rem;
+  padding: 0.8rem 1.75rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-gold);
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+}
+
+.btn-sgt-gold:hover {
+  background: var(--champagne-gold-light);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(200, 169, 107, 0.35);
+  color: #111111 !important;
+}
+
+.btn-sgt-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: transparent;
+  color: var(--pure-white) !important;
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.78rem 1.65rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  transition: all var(--transition-normal);
+}
+
+.btn-sgt-outline:hover {
+  border-color: var(--champagne-gold);
+  color: var(--champagne-gold) !important;
+  background: rgba(200, 169, 107, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-sgt-outline-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  background: transparent;
+  color: var(--champagne-gold) !important;
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.78rem 1.65rem;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border-gold);
+  transition: all var(--transition-normal);
+}
+
+.btn-sgt-outline-gold:hover {
+  background: var(--champagne-gold);
+  color: #111111 !important;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+/* Subtle Tech Pattern */
+.sgt-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(200, 169, 107, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 169, 107, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}

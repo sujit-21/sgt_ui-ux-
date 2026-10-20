@@ -1,0 +1,400 @@
+/* SGT Technologies - About Us Page Styles */
+.sgt-about-page {
+  background-color: var(--midnight-black);
+  color: var(--warm-ivory);
+  min-height: 100vh;
+}
+
+/* Hero */
+.sgt-about-hero {
+  padding: 8rem 1.5rem 4rem 1.5rem;
+  background: radial-gradient(circle at 50% 0%, rgba(200, 169, 107, 0.08) 0%, rgba(17, 17, 17, 1) 75%);
+  text-align: center;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.sgt-about-hero-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sgt-about-headline {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3.2vw, 2.85rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  margin: 1.25rem auto;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sgt-about-subtext {
+  font-size: clamp(0.95rem, 1.2vw, 1.12rem);
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sgt-about-container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* 2. Official Brand Message Card */
+.sgt-about-message-section {
+  padding: 4.5rem 0 2rem 0;
+}
+
+.sgt-brand-message-card {
+  background: linear-gradient(135deg, rgba(200, 169, 107, 0.09) 0%, rgba(26, 26, 26, 0.9) 100%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 3rem;
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-message-quote-mark {
+  font-family: Georgia, serif;
+  font-size: 5rem;
+  color: var(--champagne-gold);
+  line-height: 1;
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  opacity: 0.25;
+}
+
+.sgt-brand-quote {
+  font-family: var(--font-headings);
+  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+  font-weight: 600;
+  color: var(--pure-white);
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.01em;
+}
+
+.sgt-brand-signature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(200, 169, 107, 0.2);
+  padding-top: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.brand-author {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--champagne-gold);
+}
+
+.brand-credo {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--warm-ivory);
+  opacity: 0.75;
+}
+
+/* 3. Mission & Vision */
+.sgt-about-mission-section {
+  padding: 4.5rem 0;
+}
+
+.sgt-mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.sgt-mv-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  transition: all var(--transition-normal);
+}
+
+.sgt-mv-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-mv-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: var(--radius-md);
+  background: rgba(200, 169, 107, 0.1);
+  border: 1px solid rgba(200, 169, 107, 0.2);
+  color: var(--champagne-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.sgt-mv-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--champagne-gold);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sgt-mv-title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  line-height: 1.25;
+  margin: 0 0 1rem 0;
+}
+
+.sgt-mv-text {
+  font-size: 0.98rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* 4. Technology Philosophy */
+.sgt-about-philosophy-section {
+  padding: 4.5rem 0;
+}
+
+.sgt-philosophy-box {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem;
+}
+
+.sgt-philosophy-header {
+  margin-bottom: 2rem;
+}
+
+.sgt-philosophy-title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  margin: 0.5rem 0 0 0;
+}
+
+.sgt-philosophy-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.sgt-philosophy-content p {
+  font-size: 1.05rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.sgt-philosophy-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 2rem;
+}
+
+.philo-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--pure-white);
+}
+
+/* 5. Core Values */
+.sgt-about-values-section {
+  padding: 5rem 0;
+  background: linear-gradient(180deg, var(--midnight-black) 0%, #151515 100%);
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-about-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.sgt-about-value-card {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  transition: all var(--transition-normal);
+}
+
+.sgt-about-value-card:hover {
+  border-color: var(--border-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sgt-value-num {
+  font-family: var(--font-headings);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--champagne-gold);
+  margin-bottom: 1.25rem;
+}
+
+.sgt-value-title {
+  font-family: var(--font-headings);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pure-white);
+  line-height: 1.35;
+  margin: 0 0 0.85rem 0;
+}
+
+.sgt-value-desc {
+  font-size: 0.92rem;
+  color: var(--warm-ivory);
+  opacity: 0.8;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 6. Commitment */
+.sgt-about-commitment-section {
+  padding: 5.5rem 0 7.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.sgt-commitment-card {
+  background: radial-gradient(circle at 100% 0%, rgba(200, 169, 107, 0.1) 0%, rgba(26, 26, 26, 0.95) 80%);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 4rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.sgt-commitment-title {
+  font-family: var(--font-headings);
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 800;
+  color: var(--pure-white);
+  letter-spacing: -0.02em;
+  margin: 1.25rem 0 1.25rem 0;
+}
+
+.sgt-commitment-desc {
+  font-size: 1.05rem;
+  color: var(--warm-ivory);
+  opacity: 0.85;
+  line-height: 1.7;
+  margin-bottom: 2.25rem;
+}
+
+.sgt-commitment-bullets {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.commitment-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: var(--warm-ivory);
+  line-height: 1.6;
+}
+
+.commitment-bullet strong {
+  color: var(--champagne-gold);
+}
+
+.bullet-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--champagne-gold);
+  flex-shrink: 0;
+  margin-top: 7px;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+  .sgt-mv-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgt-about-values-grid {
+    grid-template-columns: 1fr;
+  }
+  .sgt-philosophy-pillars {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sgt-brand-message-card,
+  .sgt-commitment-card,
+  .sgt-philosophy-box {
+    padding: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .sgt-about-headline {
+    white-space: normal;
+    font-size: clamp(1.4rem, 4.8vw, 2.2rem);
+    text-wrap: balance;
+  }
+}
+
+@media (max-width: 640px) {
+  .sgt-about-hero {
+    padding: 6.5rem 1rem 3rem 1rem;
+  }
+  .sgt-about-subtext {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+  .sgt-brand-message-card,
+  .sgt-commitment-card,
+  .sgt-philosophy-box {
+    padding: 2rem 1.25rem;
+  }
+  .sgt-message-quote-mark {
+    font-size: 3.5rem;
+    top: 1rem;
+    left: 1rem;
+  }
+  .sgt-philosophy-pillars {
+    grid-template-columns: 1fr;
+  }
+  .sgt-commitment-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+}
